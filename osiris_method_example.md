@@ -47,5 +47,5 @@
 
 outputJson : 
 |  Nombre| Localización | Función |
-|--|--| --|
+|---|---|---|
 | outputJson | jp_helper | retorna variables en formato JSON
