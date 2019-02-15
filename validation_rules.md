@@ -11,37 +11,37 @@
 
     class  ValidationValidations  {
 	    private  static  $rules  = array(
-							    'validatePhone'  =>  [
-								    ['field'  =>  'loan_number',
-									 'label'  =>  'loan_number',
-									 'rules'  =>  'required|is_numeric'],
-								    ['field'  =>  'phone_number',
-								     'label'  =>  'phone_number',
-								     'rules'  =>  'required|is_numeric'],
-							    ],
-							    'getAddressConfirmation'  =>  [
-								    ['field'  =>  'loan_number',
-								     'label'  =>  'loan_number',
-								     'rules'  =>  'required|is_numeric'],
-								    ['field'  =>  'applicant_id',
-								     'label'  =>  'applicant_id',
-								     'rules'  =>  'required|is_numeric'],
-								    ['field'  =>  'address',
-								    'label'  =>  'address',
-								    'rules'  =>  'required'],
-							    ],
-    
-							    'validateEmail'  =>  [
-								    ['field'  =>  'loan_number',
-								    'label'  =>  'loan_number',
-								    'rules'  =>  'required|is_numeric'],
-								    ['field'  =>  'applicant_id',
-								    'label'  =>  'applicant_id',
-								    'rules'  =>  'required|is_numeric'],
-								    ['field'  =>  'email',
-								    'label'  =>  'email',
-								    'rules'  =>  'required'],
-							    ]
+					    'validatePhone'  =>  [
+						    ['field'  =>  'loan_number',
+							 'label'  =>  'loan_number',
+							 'rules'  =>  'required|is_numeric'],
+						    ['field'  =>  'phone_number',
+						     'label'  =>  'phone_number',
+						     'rules'  =>  'required|is_numeric'],
+					    ],
+					    'getAddressConfirmation'  =>  [
+						    ['field'  =>  'loan_number',
+						     'label'  =>  'loan_number',
+						     'rules'  =>  'required|is_numeric'],
+						    ['field'  =>  'applicant_id',
+						     'label'  =>  'applicant_id',
+						     'rules'  =>  'required|is_numeric'],
+						    ['field'  =>  'address',
+						    'label'  =>  'address',
+						    'rules'  =>  'required'],
+					    ],
+  
+					    'validateEmail'  =>  [
+						    ['field'  =>  'loan_number',
+						    'label'  =>  'loan_number',
+						    'rules'  =>  'required|is_numeric'],
+						    ['field'  =>  'applicant_id',
+						    'label'  =>  'applicant_id',
+						    'rules'  =>  'required|is_numeric'],
+						    ['field'  =>  'email',
+						    'label'  =>  'email',
+						    'rules'  =>  'required'],
+					    ]
 	    );
 	    static  public  function  getRules($validation)  {
 		    return  self::$rules[$validation];
